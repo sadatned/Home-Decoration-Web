@@ -1,0 +1,67 @@
+body{
+    background-image: url(bedroom.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    .sidebar {
+        height: 100%;
+        width: 270px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #F4DFD0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+
+h1{
+    color: #7D5A5A;
+    margin-top: 270px;
+    text-align: center;
+}
+
+p{
+    color: #D7B19D;
+    text-align: center;
+}
+
+
+.navbar{
+    align-items: center;
+    display: flex;
+    margin-left:700px;
+    justify-content: space-between;
+    padding: 35px 0;
+    width: 85%;
+    
+}
+.navbar ol li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ol li a{
+    text-decoration: none;
+    color: #fff;
+    transform: uppercase;
+}
+
+.navbar ol li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ol li:hover:after{
+    width: 100%;
+}
